@@ -1,0 +1,109 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1576867757603-05b134ebc379?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  
+}
+
+#container {
+    background-color: rgba(85, 88, 86, 0.9);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 725px;
+    border-radius: 40px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.above{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color:#d5a27a;
+  align-self: center;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#addTip {
+    background-color:#78DEC7;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#btn {
+  background-color: #F7DBF0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#tip {
+  font-family: 'Montserrat', sans-serif;
+  display: none;
+  border-radius: 10px;
+}
+
+#showTotalAmountToPay {
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+}
+
+#billSplit, #totalTip, #totalAmount {
+  font-family: 'Montserrat', sans-serif;
+  background-color:   rgb(216, 181, 154, 0.6) ;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+
+@media all and (max-width: 500px) {
+  #container {
+    width: 350px;
+  
+}
+#showTotalAmountToPay {
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+
+  margin-right: 20px;
+}
+button{
+  width: 260px;
+  align-self: center;
+}
+#billSplit, #totalTip, #totalAmount {
+
+  margin: 10px;
+  padding: 10px;
+
+}
+}
