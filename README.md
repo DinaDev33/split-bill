@@ -1,2 +1,2 @@
 # split-bill
-https://dina-sales-app.glitch.me/
+https://dina-split-bill-app.glitch.me
