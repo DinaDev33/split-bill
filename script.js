@@ -1,5 +1,3 @@
-// https://glitch.com/edit/#!/nonstop-imaginary-airport?path=script.js%3A1%3A0 
-
 const button = document.querySelector("#btn");
 button.addEventListener("click", calculateAmount);
 
@@ -28,19 +26,16 @@ function calculateAmount(e) {
   
   }
 
-//Формулы
   let amountPerPerson = bill / people;
   let tipPerPerson = (bill * tip) / people;
   let totalSum = amountPerPerson + tipPerPerson;
 
-//toFixed()
 amountPerPerson = amountPerPerson.toFixed(2);
 tipPerPerson = tipPerPerson.toFixed(2);
 totalSum = totalSum.toFixed(2);
-
- //Показываем в приложении
 
  document.querySelector("#dividedBill").textContent = amountPerPerson;
  document.querySelector("#dividedTip").textContent = tipPerPerson;
  document.querySelector("#billAndTip").textContent = totalSum;
 }
+
